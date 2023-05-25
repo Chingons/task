@@ -21,19 +21,25 @@ function TaskForm(){
     }
 
     return (    
-        <form onSubmit={handleSubmit}>
+        
+            <form onSubmit={handleSubmit} id='contenido-formulario'>
             <input type="text" placeholder="Escribe tu Tarea" 
             onChange={(e) => setTitle(e.target.value)}
             value={title}
+            id='input-tarea'
             />
             <textarea placeholder='Escribe la descripción de la tarea'
             onChange={(x) => setDescription(x.target.value)}
             value={description}
+            id='textarea-desc'
             ></textarea>
-            <button>
+            <button id='boton-guardar'>
                 Guardar
             </button>
         </form>
+
+        
+        
     
 
 )

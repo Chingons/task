@@ -6,10 +6,14 @@ import { TaskContextProvider } from './context/TaskContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TaskContextProvider>
-      <App />
+    <div id='contenedor-todo'>
+      <TaskContextProvider>
+        <App />
 
-    </TaskContextProvider>
+      </TaskContextProvider>
+
+    </div>
+    
     
   </React.StrictMode>,
 )

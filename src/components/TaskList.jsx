@@ -10,7 +10,7 @@ function TaskList(){
         return <h1>No hay tareas aun</h1>
     }
     return (
-        <div>
+        <div id="contenedor-card">
             {
                 tasks.map(tasks => (
                     <TaskCard key={tasks.id} task={tasks} />
